@@ -9,13 +9,13 @@ pipeline {
         stage('Build') {
             steps {
                 // powershell 'gradle clean build'
-                bat 'gradle build'
+                bat 'start gradlew build'
             }
         }
         stage('Test') {
             steps {
                 // powershell 'gradle test'
-                bat 'gradle test'
+                bat 'start gradlew test'
             }
         }
         stage('Deploy') {
